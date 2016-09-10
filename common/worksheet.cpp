@@ -75,7 +75,8 @@ void DrawPageLayout( wxDC* aDC, EDA_RECT* aClipBox,
 
 
 void EDA_DRAW_FRAME::DrawWorkSheet( wxDC* aDC, BASE_SCREEN* aScreen, int aLineWidth,
-                                     double aScalar, const wxString &aFilename,                                      const wxString &aSheetLayer )
+                                     double aScalar, const wxString &aFilename,
+                                     const wxString &aSheetLayer )
 {
     if( !m_showBorderAndTitleBlock )
         return;
