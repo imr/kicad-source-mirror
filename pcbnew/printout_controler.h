@@ -123,7 +123,7 @@ public:
 
     void GetPageInfo( int* minPage, int* maxPage, int* selPageFrom, int* selPageTo );
 
-    void DrawPage();
+    void DrawPage( wxString layer );
 };
 
 #endif      // PRINTOUT_CONTROLLER_H

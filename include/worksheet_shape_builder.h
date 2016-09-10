@@ -384,6 +384,7 @@ protected:
     const wxString* m_paperFormat;      // for basic inscriptions
     wxString        m_fileName;         // for basic inscriptions
     const wxString* m_sheetFullName;    // for basic inscriptions
+    const wxString* m_sheetLayer;       // for basic inscriptions
 
 
 public:
@@ -421,6 +422,15 @@ public:
     void SetSheetName( const wxString & aSheetName )
     {
         m_sheetFullName = &aSheetName;
+    }
+
+    /**
+     * Set the sheet layer to draw/plot
+     * @param aSheetLayer = the text to draw/plot by the "sheetlayer" format
+     */
+    void SetSheetLayer( const wxString & aSheetLayer )
+    {
+        m_sheetLayer = &aSheetLayer;
     }
 
     /** Function SetPenSize
